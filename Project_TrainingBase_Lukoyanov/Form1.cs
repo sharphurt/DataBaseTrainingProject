@@ -19,5 +19,6 @@ namespace Project_TrainingBase_Lukoyanov
 
 		private void salesPeopleButton_Click(object sender, EventArgs e) => new Salespeople().ShowDialog();
 
+		private void customersButton_Click(object sender, EventArgs e) => new Customers().ShowDialog();
 	}
 }

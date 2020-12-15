@@ -1,7 +1,7 @@
 ﻿
 namespace Project_TrainingBase_Lukoyanov
 {
-	partial class Salespeople
+	partial class Customers
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -30,16 +30,12 @@ namespace Project_TrainingBase_Lukoyanov
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Salespeople));
-			System.Windows.Forms.Label sNAMELabel;
-			System.Windows.Forms.Label cOMMLabel;
-			System.Windows.Forms.Label cITYLabel;
-			this.label1 = new System.Windows.Forms.Label();
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Customers));
 			this.training_base_LukoyanovDataSet = new Project_TrainingBase_Lukoyanov.Training_base_LukoyanovDataSet();
-			this.salespeopleBindingSource = new System.Windows.Forms.BindingSource(this.components);
-			this.salespeopleTableAdapter = new Project_TrainingBase_Lukoyanov.Training_base_LukoyanovDataSetTableAdapters.SalespeopleTableAdapter();
+			this.customersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+			this.customersTableAdapter = new Project_TrainingBase_Lukoyanov.Training_base_LukoyanovDataSetTableAdapters.CustomersTableAdapter();
 			this.tableAdapterManager = new Project_TrainingBase_Lukoyanov.Training_base_LukoyanovDataSetTableAdapters.TableAdapterManager();
-			this.salespeopleBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+			this.customersBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
 			this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
 			this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
 			this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
@@ -51,62 +47,53 @@ namespace Project_TrainingBase_Lukoyanov
 			this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
 			this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
 			this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
-			this.salespeopleBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-			this.sNAMETextBox = new System.Windows.Forms.TextBox();
-			this.cOMMTextBox = new System.Windows.Forms.TextBox();
-			this.cITYTextBox = new System.Windows.Forms.TextBox();
-			sNAMELabel = new System.Windows.Forms.Label();
-			cOMMLabel = new System.Windows.Forms.Label();
-			cITYLabel = new System.Windows.Forms.Label();
+			this.customersBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+			this.customersDataGridView = new System.Windows.Forms.DataGridView();
+			this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.saveButton = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.training_base_LukoyanovDataSet)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.salespeopleBindingSource)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.salespeopleBindingNavigator)).BeginInit();
-			this.salespeopleBindingNavigator.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.customersBindingNavigator)).BeginInit();
+			this.customersBindingNavigator.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.customersDataGridView)).BeginInit();
 			this.SuspendLayout();
-			// 
-			// label1
-			// 
-			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.label1.ForeColor = System.Drawing.Color.DarkBlue;
-			this.label1.Location = new System.Drawing.Point(285, 42);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(184, 50);
-			this.label1.TabIndex = 0;
-			this.label1.Text = "Продавцы";
-			this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// training_base_LukoyanovDataSet
 			// 
 			this.training_base_LukoyanovDataSet.DataSetName = "Training_base_LukoyanovDataSet";
 			this.training_base_LukoyanovDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
 			// 
-			// salespeopleBindingSource
+			// customersBindingSource
 			// 
-			this.salespeopleBindingSource.DataMember = "Salespeople";
-			this.salespeopleBindingSource.DataSource = this.training_base_LukoyanovDataSet;
+			this.customersBindingSource.DataMember = "Customers";
+			this.customersBindingSource.DataSource = this.training_base_LukoyanovDataSet;
 			// 
-			// salespeopleTableAdapter
+			// customersTableAdapter
 			// 
-			this.salespeopleTableAdapter.ClearBeforeFill = true;
+			this.customersTableAdapter.ClearBeforeFill = true;
 			// 
 			// tableAdapterManager
 			// 
 			this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-			this.tableAdapterManager.CustomersTableAdapter = null;
+			this.tableAdapterManager.CustomersTableAdapter = this.customersTableAdapter;
 			this.tableAdapterManager.Order_DetailsTableAdapter = null;
 			this.tableAdapterManager.OrdersTableAdapter = null;
 			this.tableAdapterManager.ProductTableAdapter = null;
-			this.tableAdapterManager.SalespeopleTableAdapter = this.salespeopleTableAdapter;
+			this.tableAdapterManager.SalespeopleTableAdapter = null;
 			this.tableAdapterManager.UpdateOrder = Project_TrainingBase_Lukoyanov.Training_base_LukoyanovDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
 			// 
-			// salespeopleBindingNavigator
+			// customersBindingNavigator
 			// 
-			this.salespeopleBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
-			this.salespeopleBindingNavigator.BindingSource = this.salespeopleBindingSource;
-			this.salespeopleBindingNavigator.CountItem = this.bindingNavigatorCountItem;
-			this.salespeopleBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
-			this.salespeopleBindingNavigator.ImageScalingSize = new System.Drawing.Size(20, 20);
-			this.salespeopleBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+			this.customersBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
+			this.customersBindingNavigator.BindingSource = this.customersBindingSource;
+			this.customersBindingNavigator.CountItem = this.bindingNavigatorCountItem;
+			this.customersBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+			this.customersBindingNavigator.ImageScalingSize = new System.Drawing.Size(20, 20);
+			this.customersBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
             this.bindingNavigatorSeparator,
@@ -118,17 +105,17 @@ namespace Project_TrainingBase_Lukoyanov
             this.bindingNavigatorSeparator2,
             this.bindingNavigatorAddNewItem,
             this.bindingNavigatorDeleteItem,
-            this.salespeopleBindingNavigatorSaveItem});
-			this.salespeopleBindingNavigator.Location = new System.Drawing.Point(0, 0);
-			this.salespeopleBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-			this.salespeopleBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
-			this.salespeopleBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
-			this.salespeopleBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-			this.salespeopleBindingNavigator.Name = "salespeopleBindingNavigator";
-			this.salespeopleBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-			this.salespeopleBindingNavigator.Size = new System.Drawing.Size(800, 31);
-			this.salespeopleBindingNavigator.TabIndex = 1;
-			this.salespeopleBindingNavigator.Text = "bindingNavigator1";
+            this.customersBindingNavigatorSaveItem});
+			this.customersBindingNavigator.Location = new System.Drawing.Point(0, 0);
+			this.customersBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
+			this.customersBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
+			this.customersBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
+			this.customersBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
+			this.customersBindingNavigator.Name = "customersBindingNavigator";
+			this.customersBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
+			this.customersBindingNavigator.Size = new System.Drawing.Size(971, 31);
+			this.customersBindingNavigator.TabIndex = 0;
+			this.customersBindingNavigator.Text = "bindingNavigator1";
 			// 
 			// bindingNavigatorMoveFirstItem
 			// 
@@ -216,96 +203,102 @@ namespace Project_TrainingBase_Lukoyanov
 			this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 28);
 			this.bindingNavigatorDeleteItem.Text = "Удалить";
 			// 
-			// salespeopleBindingNavigatorSaveItem
+			// customersBindingNavigatorSaveItem
 			// 
-			this.salespeopleBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-			this.salespeopleBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("salespeopleBindingNavigatorSaveItem.Image")));
-			this.salespeopleBindingNavigatorSaveItem.Name = "salespeopleBindingNavigatorSaveItem";
-			this.salespeopleBindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 28);
-			this.salespeopleBindingNavigatorSaveItem.Text = "Сохранить данные";
-			this.salespeopleBindingNavigatorSaveItem.Click += new System.EventHandler(this.salespeopleBindingNavigatorSaveItem_Click);
+			this.customersBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.customersBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("customersBindingNavigatorSaveItem.Image")));
+			this.customersBindingNavigatorSaveItem.Name = "customersBindingNavigatorSaveItem";
+			this.customersBindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 28);
+			this.customersBindingNavigatorSaveItem.Text = "Сохранить данные";
+			this.customersBindingNavigatorSaveItem.Click += new System.EventHandler(this.customersBindingNavigatorSaveItem_Click);
 			// 
-			// sNAMELabel
+			// customersDataGridView
 			// 
-			sNAMELabel.AutoSize = true;
-			sNAMELabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			sNAMELabel.Location = new System.Drawing.Point(195, 143);
-			sNAMELabel.Name = "sNAMELabel";
-			sNAMELabel.Size = new System.Drawing.Size(104, 29);
-			sNAMELabel.TabIndex = 2;
-			sNAMELabel.Text = "SNAME:";
+			this.customersDataGridView.AutoGenerateColumns = false;
+			this.customersDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.customersDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5});
+			this.customersDataGridView.DataSource = this.customersBindingSource;
+			this.customersDataGridView.Location = new System.Drawing.Point(12, 79);
+			this.customersDataGridView.Name = "customersDataGridView";
+			this.customersDataGridView.RowHeadersWidth = 51;
+			this.customersDataGridView.RowTemplate.Height = 24;
+			this.customersDataGridView.Size = new System.Drawing.Size(947, 233);
+			this.customersDataGridView.TabIndex = 1;
+			this.customersDataGridView.UserDeletingRow += new System.Windows.Forms.DataGridViewRowCancelEventHandler(this.customersDataGridView_UserDeletingRow);
 			// 
-			// sNAMETextBox
+			// dataGridViewTextBoxColumn5
 			// 
-			this.sNAMETextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.salespeopleBindingSource, "SNAME", true));
-			this.sNAMETextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.sNAMETextBox.Location = new System.Drawing.Point(327, 140);
-			this.sNAMETextBox.Name = "sNAMETextBox";
-			this.sNAMETextBox.Size = new System.Drawing.Size(192, 34);
-			this.sNAMETextBox.TabIndex = 3;
+			this.dataGridViewTextBoxColumn5.DataPropertyName = "SNUM";
+			this.dataGridViewTextBoxColumn5.HeaderText = "SNUM";
+			this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
+			this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+			this.dataGridViewTextBoxColumn5.Width = 150;
 			// 
-			// cOMMLabel
+			// dataGridViewTextBoxColumn4
 			// 
-			cOMMLabel.AutoSize = true;
-			cOMMLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			cOMMLabel.Location = new System.Drawing.Point(204, 223);
-			cOMMLabel.Name = "cOMMLabel";
-			cOMMLabel.Size = new System.Drawing.Size(95, 29);
-			cOMMLabel.TabIndex = 4;
-			cOMMLabel.Text = "COMM:";
+			this.dataGridViewTextBoxColumn4.DataPropertyName = "RATING";
+			this.dataGridViewTextBoxColumn4.HeaderText = "RATING";
+			this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
+			this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+			this.dataGridViewTextBoxColumn4.Width = 150;
 			// 
-			// cOMMTextBox
+			// dataGridViewTextBoxColumn3
 			// 
-			this.cOMMTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.salespeopleBindingSource, "COMM", true));
-			this.cOMMTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.cOMMTextBox.Location = new System.Drawing.Point(327, 220);
-			this.cOMMTextBox.Name = "cOMMTextBox";
-			this.cOMMTextBox.Size = new System.Drawing.Size(192, 34);
-			this.cOMMTextBox.TabIndex = 5;
+			this.dataGridViewTextBoxColumn3.DataPropertyName = "CITY";
+			this.dataGridViewTextBoxColumn3.HeaderText = "CITY";
+			this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
+			this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+			this.dataGridViewTextBoxColumn3.Width = 150;
 			// 
-			// cITYLabel
+			// dataGridViewTextBoxColumn2
 			// 
-			cITYLabel.AutoSize = true;
-			cITYLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			cITYLabel.Location = new System.Drawing.Point(225, 183);
-			cITYLabel.Name = "cITYLabel";
-			cITYLabel.Size = new System.Drawing.Size(74, 29);
-			cITYLabel.TabIndex = 6;
-			cITYLabel.Text = "CITY:";
+			this.dataGridViewTextBoxColumn2.DataPropertyName = "CNAME";
+			this.dataGridViewTextBoxColumn2.HeaderText = "CNAME";
+			this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
+			this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+			this.dataGridViewTextBoxColumn2.Width = 150;
 			// 
-			// cITYTextBox
+			// dataGridViewTextBoxColumn1
 			// 
-			this.cITYTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.salespeopleBindingSource, "CITY", true));
-			this.cITYTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.cITYTextBox.Location = new System.Drawing.Point(327, 180);
-			this.cITYTextBox.Name = "cITYTextBox";
-			this.cITYTextBox.Size = new System.Drawing.Size(192, 34);
-			this.cITYTextBox.TabIndex = 7;
+			this.dataGridViewTextBoxColumn1.DataPropertyName = "CNUM";
+			this.dataGridViewTextBoxColumn1.HeaderText = "CNUM";
+			this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+			this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+			this.dataGridViewTextBoxColumn1.Width = 150;
 			// 
-			// Salespeople
+			// saveButton
+			// 
+			this.saveButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.saveButton.Location = new System.Drawing.Point(12, 334);
+			this.saveButton.Name = "saveButton";
+			this.saveButton.Size = new System.Drawing.Size(193, 46);
+			this.saveButton.TabIndex = 2;
+			this.saveButton.Text = "Сохранить";
+			this.saveButton.UseVisualStyleBackColor = true;
+			this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
+			// 
+			// Customers
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(800, 450);
-			this.Controls.Add(cITYLabel);
-			this.Controls.Add(this.cITYTextBox);
-			this.Controls.Add(cOMMLabel);
-			this.Controls.Add(this.cOMMTextBox);
-			this.Controls.Add(sNAMELabel);
-			this.Controls.Add(this.sNAMETextBox);
-			this.Controls.Add(this.salespeopleBindingNavigator);
-			this.Controls.Add(this.label1);
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-			this.MaximizeBox = false;
-			this.MinimizeBox = false;
-			this.Name = "Salespeople";
-			this.Text = "Продавцы";
-			this.Load += new System.EventHandler(this.Salespeople_Load);
+			this.ClientSize = new System.Drawing.Size(971, 450);
+			this.Controls.Add(this.saveButton);
+			this.Controls.Add(this.customersDataGridView);
+			this.Controls.Add(this.customersBindingNavigator);
+			this.Name = "Customers";
+			this.Text = "Покупатели";
+			this.Load += new System.EventHandler(this.Customers_Load);
 			((System.ComponentModel.ISupportInitialize)(this.training_base_LukoyanovDataSet)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.salespeopleBindingSource)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.salespeopleBindingNavigator)).EndInit();
-			this.salespeopleBindingNavigator.ResumeLayout(false);
-			this.salespeopleBindingNavigator.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.customersBindingNavigator)).EndInit();
+			this.customersBindingNavigator.ResumeLayout(false);
+			this.customersBindingNavigator.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.customersDataGridView)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -313,12 +306,11 @@ namespace Project_TrainingBase_Lukoyanov
 
 		#endregion
 
-		private System.Windows.Forms.Label label1;
 		private Training_base_LukoyanovDataSet training_base_LukoyanovDataSet;
-		private System.Windows.Forms.BindingSource salespeopleBindingSource;
-		private Training_base_LukoyanovDataSetTableAdapters.SalespeopleTableAdapter salespeopleTableAdapter;
+		private System.Windows.Forms.BindingSource customersBindingSource;
+		private Training_base_LukoyanovDataSetTableAdapters.CustomersTableAdapter customersTableAdapter;
 		private Training_base_LukoyanovDataSetTableAdapters.TableAdapterManager tableAdapterManager;
-		private System.Windows.Forms.BindingNavigator salespeopleBindingNavigator;
+		private System.Windows.Forms.BindingNavigator customersBindingNavigator;
 		private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
 		private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
 		private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
@@ -330,9 +322,13 @@ namespace Project_TrainingBase_Lukoyanov
 		private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
 		private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
 		private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
-		private System.Windows.Forms.ToolStripButton salespeopleBindingNavigatorSaveItem;
-		private System.Windows.Forms.TextBox sNAMETextBox;
-		private System.Windows.Forms.TextBox cOMMTextBox;
-		private System.Windows.Forms.TextBox cITYTextBox;
+		private System.Windows.Forms.ToolStripButton customersBindingNavigatorSaveItem;
+		private System.Windows.Forms.DataGridView customersDataGridView;
+		private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+		private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+		private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+		private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+		private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+		private System.Windows.Forms.Button saveButton;
 	}
 }

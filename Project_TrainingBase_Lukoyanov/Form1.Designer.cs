@@ -31,7 +31,7 @@ namespace Project_TrainingBase_Lukoyanov
 		{
 			this.label1 = new System.Windows.Forms.Label();
 			this.salesPeopleButton = new System.Windows.Forms.Button();
-			this.button2 = new System.Windows.Forms.Button();
+			this.customersButton = new System.Windows.Forms.Button();
 			this.button3 = new System.Windows.Forms.Button();
 			this.button4 = new System.Windows.Forms.Button();
 			this.button5 = new System.Windows.Forms.Button();
@@ -60,15 +60,16 @@ namespace Project_TrainingBase_Lukoyanov
 			this.salesPeopleButton.UseVisualStyleBackColor = true;
 			this.salesPeopleButton.Click += new System.EventHandler(this.salesPeopleButton_Click);
 			// 
-			// button2
+			// customersButton
 			// 
-			this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.button2.Location = new System.Drawing.Point(155, 120);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(258, 48);
-			this.button2.TabIndex = 2;
-			this.button2.Text = "Покупатели";
-			this.button2.UseVisualStyleBackColor = true;
+			this.customersButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.customersButton.Location = new System.Drawing.Point(155, 120);
+			this.customersButton.Name = "customersButton";
+			this.customersButton.Size = new System.Drawing.Size(258, 48);
+			this.customersButton.TabIndex = 2;
+			this.customersButton.Text = "Покупатели";
+			this.customersButton.UseVisualStyleBackColor = true;
+			this.customersButton.Click += new System.EventHandler(this.customersButton_Click);
 			// 
 			// button3
 			// 
@@ -108,7 +109,7 @@ namespace Project_TrainingBase_Lukoyanov
 			this.Controls.Add(this.button5);
 			this.Controls.Add(this.button4);
 			this.Controls.Add(this.button3);
-			this.Controls.Add(this.button2);
+			this.Controls.Add(this.customersButton);
 			this.Controls.Add(this.salesPeopleButton);
 			this.Controls.Add(this.label1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
@@ -125,7 +126,7 @@ namespace Project_TrainingBase_Lukoyanov
 
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Button salesPeopleButton;
-		private System.Windows.Forms.Button button2;
+		private System.Windows.Forms.Button customersButton;
 		private System.Windows.Forms.Button button3;
 		private System.Windows.Forms.Button button4;
 		private System.Windows.Forms.Button button5;
