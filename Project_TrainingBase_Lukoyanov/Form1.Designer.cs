@@ -30,7 +30,7 @@ namespace Project_TrainingBase_Lukoyanov
 		private void InitializeComponent()
 		{
 			this.label1 = new System.Windows.Forms.Label();
-			this.button1 = new System.Windows.Forms.Button();
+			this.salesPeopleButton = new System.Windows.Forms.Button();
 			this.button2 = new System.Windows.Forms.Button();
 			this.button3 = new System.Windows.Forms.Button();
 			this.button4 = new System.Windows.Forms.Button();
@@ -49,15 +49,16 @@ namespace Project_TrainingBase_Lukoyanov
 			this.label1.Text = "Учебная база данных";
 			this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
-			// button1
+			// salesPeopleButton
 			// 
-			this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.button1.Location = new System.Drawing.Point(155, 54);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(258, 48);
-			this.button1.TabIndex = 1;
-			this.button1.Text = "Продавцы";
-			this.button1.UseVisualStyleBackColor = true;
+			this.salesPeopleButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.salesPeopleButton.Location = new System.Drawing.Point(155, 54);
+			this.salesPeopleButton.Name = "salesPeopleButton";
+			this.salesPeopleButton.Size = new System.Drawing.Size(258, 48);
+			this.salesPeopleButton.TabIndex = 1;
+			this.salesPeopleButton.Text = "Продавцы";
+			this.salesPeopleButton.UseVisualStyleBackColor = true;
+			this.salesPeopleButton.Click += new System.EventHandler(this.salesPeopleButton_Click);
 			// 
 			// button2
 			// 
@@ -78,7 +79,6 @@ namespace Project_TrainingBase_Lukoyanov
 			this.button3.TabIndex = 3;
 			this.button3.Text = "Заказы";
 			this.button3.UseVisualStyleBackColor = true;
-			this.button3.Click += new System.EventHandler(this.button3_Click);
 			// 
 			// button4
 			// 
@@ -109,7 +109,7 @@ namespace Project_TrainingBase_Lukoyanov
 			this.Controls.Add(this.button4);
 			this.Controls.Add(this.button3);
 			this.Controls.Add(this.button2);
-			this.Controls.Add(this.button1);
+			this.Controls.Add(this.salesPeopleButton);
 			this.Controls.Add(this.label1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
 			this.MaximizeBox = false;
@@ -124,7 +124,7 @@ namespace Project_TrainingBase_Lukoyanov
 		#endregion
 
 		private System.Windows.Forms.Label label1;
-		private System.Windows.Forms.Button button1;
+		private System.Windows.Forms.Button salesPeopleButton;
 		private System.Windows.Forms.Button button2;
 		private System.Windows.Forms.Button button3;
 		private System.Windows.Forms.Button button4;
